@@ -84,12 +84,18 @@
     </population>
     <population Name="Armor 4R">
         <group Name="Items" Style="pickone">
+            <object Weight="20" Number="1" Blueprint="DoQ_PointedHat" />
             <object Weight="10" Number="1" Blueprint="DoQ_PowerBoots" />
         </group>
     </population>
     <population Name="Armor 5R">
         <group Name="Items" Style="pickone">
             <object Weight="10" Number="1" Blueprint="DoQ_PowerBoots" />
+        </group>
+    </population>
+    <population Name="HatterInventory">
+        <group Name="Items" Style="pickeach">
+            <object Blueprint="DoQ_PointedHat" Chance="2" />
         </group>
     </population>
     <population Name="CrowsongInventory">
@@ -109,7 +115,12 @@
     </population>
     <population Name="ArmorerInventory">
         <group Name="Items" Style="pickeach">
-            <object Blueprint="DoQ_Cuff" Number="0-1" />
+            <object Blueprint="DoQ_Cuff" Number="1" Chance="40" />
+        </group>
+    </population>
+    <population Name="HaberdasherInventory">
+        <group Name="Items" Style="pickeach">
+            <object Blueprint="DoQ_Jacket" Number="1" Chance="10" />
         </group>
     </population>
     <population Name="Lairs_Furnishings_glover">
@@ -175,6 +186,68 @@
     <population Name="Shoes 3">
         <group Name="Items" Style="pickone">
             <object Blueprint="DoQ_HikingBoots" Weight="10" />
+        </group>
+    </population>
+
+    <!-- Rangefinder -->
+    <population Name="Artifact 0R">
+        <group Name="Items" Style="pickone">
+            <object Blueprint="DoQ_Rangefinder" Weight="1" />
+        </group>
+    </population>
+    <population Name="Artifact 1R">
+        <group Name="Items" Style="pickone">
+            <object Blueprint="DoQ_Rangefinder" Weight="1" />
+        </group>
+    </population>
+    <population Name="Artifact 2R">
+        <group Name="Items" Style="pickone">
+            <object Blueprint="DoQ_Rangefinder" Weight="5" />
+        </group>
+    </population>
+    <population Name="Artifact 3R">
+        <group Name="Items" Style="pickone">
+            <object Blueprint="DoQ_Rangefinder" Weight="10" />
+        </group>
+    </population>
+    <population Name="Artifact 4R">
+        <group Name="Items" Style="pickone">
+            <object Blueprint="DoQ_Rangefinder" Weight="20" />
+        </group>
+    </population>
+    <population Name="VillageZero_Reward">
+        <group Name="Items" Style="pickone">
+            <object Blueprint="DoQ_Rangefinder" Number="1" />
+        </group>
+    </population>
+    <population Name="VillageTier0_QuestReward">
+        <group Name="Items" Style="pickone">
+            <object Blueprint="DoQ_Rangefinder" Number="1" />
+        </group>
+    </population>
+    <population Name="VillageTier1_QuestReward">
+        <group Name="Items" Style="pickone">
+            <object Blueprint="DoQ_Rangefinder" Number="1" />
+        </group>
+    </population>
+    <population Name="VillageTier2_QuestReward">
+        <group Name="Items" Style="pickone">
+            <object Blueprint="DoQ_Rangefinder" Number="1" />
+        </group>
+    </population>
+    <population Name="VillageTier3_QuestReward">
+        <group Name="Items" Style="pickone">
+            <object Blueprint="DoQ_Rangefinder" Number="1" />
+        </group>
+    </population>
+    <population Name="VillageTier4_QuestReward">
+        <group Name="Items" Style="pickone">
+            <object Blueprint="DoQ_Rangefinder" Number="1" />
+        </group>
+    </population>
+    <population Name="VillageTier5_QuestReward">
+        <group Name="Items" Style="pickone">
+            <object Blueprint="DoQ_Rangefinder" Number="1" />
         </group>
     </population>
 </populations>
