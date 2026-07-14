@@ -1,0 +1,221 @@
+<objects>
+    <!-- Item -->
+    <object Name="DoQ_ItemDye" Inherits="Item">
+        <part Name="Render" DisplayName="spray {{R-G-B sequence|dye}}" Tile="Klehrik_DripofQud/Spray.png" ColorString="&amp;y" DetailColor="B" RenderString="012" />
+        <part Name="Examiner" Complexity="1" Alternate="UnknownBottle" />
+        <part Name="Commerce" Value="15" />
+        <part Name="Description" Short="An aerosol can blown full of various pigments." />
+        <part Name="Applicator" />
+        <part Name="DoQ_ItemDye" />
+        <tag Name="EquipSound" Value="sfx_equip_material_sprayBottle" />
+        <tag Name="Gift" Value="*noinherit" />
+        <tag Name="Tier" Value="1" />
+        <stag Name="Tool" />
+    </object>
+
+    <!-- Head -->
+    <object Name="DoQ_PointedHat" Inherits="BaseHat">
+        <part Name="Armor" AV="1" DV="0" Intelligence="1" Ego="1" WornOn="Head" />
+        <part Name="Render" DisplayName="pointed hat" Tile="Klehrik_DripofQud/PointedHat.png" ColorString="&amp;r" DetailColor="W" RenderString="]" />
+        <part Name="Commerce" Value="95" />
+        <part Name="Description" Short="Deep-dyed goatskin is flattened into a disk shape and pushed triangularly skyward to a tapered point." />
+        <part Name="Physics" Weight="1" Organic="true" />
+        <tag Name="Tier" Value="4" />
+        <tag Name="DynamicObjectsTable:Headwear" />
+		<stag Name="Scholarly" />
+        <part Name="ItemElements" Elements="scholarship::4" />
+    </object>
+    <object Name="DoQ_TopHat" Inherits="BaseHat">
+        <part Name="Armor" AV="1" DV="0" Ego="1" WornOn="Head" />
+        <part Name="Render" DisplayName="top hat" Tile="Klehrik_DripofQud/TopHat.png" ColorString="&amp;K" DetailColor="y" RenderString="]" />
+        <part Name="Commerce" Value="20" />
+        <part Name="Description" Short="Silken fabric is wound around cylindrically to form a tall pillar with a flattened top." />
+        <part Name="Physics" Weight="1" Organic="true" />
+        <tag Name="Tier" Value="2" />
+        <tag Name="DynamicObjectsTable:Headwear" />
+    </object>
+
+    <!-- Face -->
+    <object Name="DoQ_Bandana" Inherits="BaseMask">
+        <part Name="Armor" AV="0" DV="1" Agility="1" WornOn="Face" />
+        <part Name="Render" DisplayName="bandana" Tile="Klehrik_DripofQud/Bandana.png" ColorString="&amp;r" RenderString="]" />
+        <part Name="Commerce" Value="20" />
+        <part Name="Description" Short="Cut cloth is wrapped into a guard about the face and fastened tight at the back." />
+        <part Name="Physics" Weight="1" Organic="true" />
+        <tag Name="Tier" Value="2" />
+    </object>
+    <object Name="DoQ_Rangefinder" Inherits="BaseMask">
+        <part Name="Armor" AV="0" DV="0" WornOn="Face" />
+        <part Name="Render" DisplayName="{{C|rangefinder}}" Tile="Klehrik_DripofQud/Bandana.png" ColorString="&amp;r" RenderString="]" />
+        <part Name="Examiner" Complexity="4" />
+        <part Name="Commerce" Value="50" />
+        <part Name="Description" Short="TODO" />
+        <part Name="Physics" Weight="4" />
+        <part Name="PowerSwitch" EnergyCost="100" FlippableWithoutUnderstanding="true" ActivateSuccessMessage="" ActivateFailureMessage="" DeactivateSuccessMessage="" DeactivateFailureMessage="" />
+        <part Name="EnergyCellSocket" SlotType="EnergyCell" />
+        <part Name="AIDefensiveEnergyCellReload" />
+        <part Name="AIPassiveEnergyCellReload" />
+        <part Name="Metal" />
+        <part Name="TinkerItem" Bits="0124" CanDisassemble="true" CanBuild="true" />
+        <part Name="DoQ_Rangefinder" ChargeUse="2" Value="2" />
+        <tag Name="EquipSound" Value="sfx_equip_armor_artifact_light" />
+        <tag Name="Tier" Value="4" />
+    </object>
+    <object Name="DoQ_Balaclava" Inherits="BaseMask">
+        <part Name="Armor" AV="0" DV="1" Cold="10" WornOn="Face" />
+        <part Name="Render" DisplayName="balaclava" Tile="Klehrik_DripofQud/Balaclava.png" ColorString="&amp;K" RenderString="]" />
+        <part Name="Commerce" Value="12" />
+        <part Name="Description" Short="Woolen fibers are crocheted into a warm covering for the face." />
+        <part Name="Physics" Weight="1" Organic="true" />
+        <tag Name="Tier" Value="2" />
+    </object>
+
+    <!-- Body -->
+    <object Name="DoQ_Jacket" Inherits="BaseArmor">
+        <part Name="Armor" AV="0" DV="1" Cold="10" CarryBonus="5" WornOn="Body" />
+        <part Name="Render" DisplayName="puffer jacket" Tile="Klehrik_DripofQud/Jacket.png" ColorString="&amp;W" DetailColor="w" RenderString="]" />
+        <part Name="Commerce" Value="25" />
+        <part Name="Description" Short="Yellow-stained synthetic material is partitioned into sections encasing soft down, forming a lightweight garb. Small pockets are strewn onto the sides, acting as nests for the hands." />
+        <part Name="Physics" Weight="2" />
+	    <tag Name="EquipSound" Value="sfx_equip_armor_synthetic" />
+        <tag Name="Tier" Value="2" />
+    </object>
+
+    <!-- Back -->
+    <object Name="DoQ_AmberShawl" Inherits="BaseCloak">
+        <part Name="Armor" AV="0" DV="-1" Elec="10" WornOn="Back" />
+        <part Name="Render" DisplayName="{{W|amber}} shawl" Tile="items/sw_shawl.bmp" ColorString="&amp;W" DetailColor="O" RenderString="]" />
+        <part Name="Commerce" Value="18" />
+        <part Name="Description" Short="Two yards of silk are cast in a warm yellow hue and woven into an insulating garment." />
+        <part Name="Physics" Weight="1" Organic="true" Category="Clothes" />
+        <tag Name="Tier" Value="1" />
+		<stag Name="Contemporary" />
+    </object>
+    <object Name="DoQ_Poncho" Inherits="BaseCloak">
+        <part Name="Armor" AV="0" DV="0" WornOn="Back" />
+        <part Name="Render" DisplayName="poncho" Tile="Klehrik_DripofQud/Poncho.png" ColorString="&amp;K" DetailColor="y" RenderString="]" />
+        <part Name="Commerce" Value="25" />
+        <part Name="Description" Short="Synthetic fibers are bound watertight and knit into a lightweight protective covering." />
+        <part Name="Physics" Weight="3" Organic="true" Category="Clothes" />
+        <part Name="DoQ_LiquidProof" />
+        <tag Name="Tier" Value="2" />
+    </object>
+
+    <!-- Arm -->
+    <object Name="DoQ_Cuff" Inherits="BaseArmlet">
+        <part Name="Armor" AV="2" DV="-2" WornOn="Arm" />
+        <part Name="Render" DisplayName="{{Y|steel}} cuff" Tile="Klehrik_DripofQud/Cuff.png" ColorString="&amp;y" DetailColor="Y" RenderString="]" />
+        <part Name="Commerce" Value="40" />
+        <part Name="Description" Short="A lump of cold metal is wrought into a thick silvery band." />
+        <part Name="Physics" Weight="3" />
+        <tag Name="Tier" Value="3" />
+        <tag Name="Mods" Value="CommonMods,BracerMods" />
+    </object>
+
+    <!-- Hands -->
+    <object Name="DoQ_RubberGloves" Inherits="BaseGlove">
+        <part Name="Armor" AV="0" DV="0" Elec="8" WornOn="Hands" />
+        <part Name="Render" DisplayName="{{W|rubber}} gloves" ColorString="&amp;W" DetailColor="c" Tile="Items/sw_gloves_skintight.bmp" RenderString="]" />
+        <part Name="Commerce" Value="8" />
+        <part Name="Description" Short="Low-cost rubber implements tailored for electrical work and tinkering." />
+        <part Name="Physics" Weight="1" Conductivity="0" />
+        <part Name="Springy" Factor="0.9" />
+        <tag Name="EquipSound" Value="sfx_equip_armor_synthetic" />
+        <tag Name="Tier" Value="2" />
+    </object>
+
+    <!-- Feet -->
+    <object Name="DoQ_PowerBoots" Inherits="BaseBoot">
+        <part Name="Armor" AV="1" DV="1" WornOn="Feet" />
+        <part Name="Render" DisplayName="{{mercurial|kinetic}} boots" Tile="Klehrik_DripofQud/PowerBoots.png" ColorString="&amp;C" DetailColor="W" RenderString="]" />
+        <part Name="Examiner" Complexity="5" />
+        <part Name="Commerce" Value="240" />
+        <part Name="Description" Short="Miniaturized flywheels store ambient kinetic energy in anticipation for a release into ground-facing pistons." />
+        <part Name="Physics" Weight="10" />
+        <part Name="Metal" />
+        <part Name="MoveCostMultiplier" Amount="-5" />
+        <part Name="DoQ_ChargeAndJumpBoost" Jump="2" Charge="3" />
+        <tag Name="EquipSound" Value="sfx_equip_armor_metal_light" />
+        <tag Name="Tier" Value="5" />
+        <stag Name="Movement" />
+    </object>
+    <object Name="DoQ_Stilettos" Inherits="BaseBoot">
+        <part Name="Armor" AV="1" DV="-1" WornOn="Feet" />
+        <part Name="Render" DisplayName="stilettos" ColorString="&amp;b" DetailColor="y" Tile="Items/sw_boots_midtier_metal.bmp" RenderString="]" />
+        <part Name="Commerce" Value="20" />
+        <part Name="Description" Short="TODO" />
+        <part Name="Physics" Weight="1" Category="Clothes" />
+        <part Name="MoveCostMultiplier" Amount="10" />
+        <part Name="MeleeWeapon" Skill="ShortBlades" MaxStrengthBonus="2" BaseDamage="1d2+1" Slot="Feet" />
+        <tag Name="ShowMeleeWeaponStats" Value="true" />
+        <tag Name="Tier" Value="2" />
+        <stag Name="Melee" />
+    </object>
+    <object Name="DoQ_HikingBoots" Inherits="BaseBoot">
+        <part Name="Armor" AV="0" DV="0" WornOn="Feet" />
+        <part Name="Render" DisplayName="hiking boots" ColorString="&amp;b" DetailColor="y" Tile="Items/sw_boots_midtier_metal.bmp" RenderString="]" />
+        <part Name="Commerce" Value="14" />
+        <part Name="Description" Short="TODO" />
+        <part Name="Physics" Weight="3" />
+        <part Name="SaveModifier" Vs="Move,Knockdown,Restraint" Amount="2" />
+        <tag Name="Tier" Value="2" />
+    </object>
+
+    <!-- Arm: Gem Bracelets -->
+    <!-- These are lame actually and add nothing -->
+    <!-- <object Name="BaseGemBracelet" Inherits="BaseBeadBracelet">
+        <part Name="Render" DisplayName="gem bracelet" Tile="Klehrik_DripofQud/Bracelet.png" TileColor="&amp;y" />
+        <!-- <tag Name="EquipSound" Value="sfx_equip_material_generic_glass" /> -->
+        <part Name="ItemElements" Elements="jewels::4" />
+        <tag Name="AggregateWith" Value="GemBracelet" />
+    </object>
+    <object Name="DoQ_AgateBracelet" Inherits="BaseGemBracelet">
+        <part Name="Render" DisplayName="{{K|agate}} bracelet" ColorString="&amp;K" DetailColor="K" />
+        <part Name="Commerce" Value="120" />
+        <part Name="Description" Short="Dark agate stones have been expertly cut into a variety of shapes. They've been hung on a chain of cast steel links and bartered up and down the River Svy." />
+        <tag Name="Tier" Value="1" />
+        <tag Name="DynamicObjectsTable:TradeGoods" />
+    </object>
+    <object Name="DoQ_TopazBracelet" Inherits="BaseGemBracelet">
+        <part Name="Render" DisplayName="{{W|topaz}} bracelet" ColorString="&amp;W" DetailColor="W" />
+        <part Name="Commerce" Value="180" />
+        <part Name="Description" Short="Bright topaz stones have been expertly cut into a variety of shapes. They've been hung on a chain of cast steel links and bartered up and down the River Svy." />
+        <tag Name="Tier" Value="2" />
+        <tag Name="DynamicObjectsTable:TradeGoods" />
+    </object>
+    <object Name="DoQ_JasperBracelet" Inherits="BaseGemBracelet">
+        <part Name="Render" DisplayName="{{R|jasper}} bracelet" ColorString="&amp;R" DetailColor="R" />
+        <part Name="Commerce" Value="240" />
+        <part Name="Description" Short="Bright jasper stones have been expertly cut into a variety of shapes. They've been hung on a chain of cast steel links and bartered up and down the River Svy." />
+        <tag Name="Tier" Value="3" />
+        <tag Name="DynamicObjectsTable:TradeGoods" />
+    </object>
+    <object Name="DoQ_AmethystBracelet" Inherits="BaseGemBracelet">
+        <part Name="Render" DisplayName="{{M|amethyst}} bracelet" ColorString="&amp;M" DetailColor="M" />
+        <part Name="Commerce" Value="300" />
+        <part Name="Description" Short="Bright amethyst stones have been expertly cut into a variety of shapes. They've been hung on a chain of cast steel links and bartered up and down the River Svy." />
+        <tag Name="Tier" Value="4" />
+        <tag Name="DynamicObjectsTable:TradeGoods" />
+    </object>
+    <object Name="DoQ_SapphireBracelet" Inherits="BaseGemBracelet">
+        <part Name="Render" DisplayName="{{B|sapphire}} bracelet" ColorString="&amp;B" DetailColor="B" />
+        <part Name="Commerce" Value="360" />
+        <part Name="Description" Short="Bright sapphire stones have been expertly cut into a variety of shapes. They've been hung on a chain of cast steel links and bartered up and down the River Svy." />
+        <tag Name="Tier" Value="5" />
+        <tag Name="DynamicObjectsTable:TradeGoods" />
+    </object>
+    <object Name="DoQ_EmeraldBracelet" Inherits="BaseGemBracelet">
+        <part Name="Render" DisplayName="{{G|emerald}} bracelet" ColorString="&amp;G" DetailColor="G" />
+        <part Name="Commerce" Value="420" />
+        <part Name="Description" Short="Bright emerald stones have been expertly cut into a variety of shapes. They've been hung on a chain of cast steel links and bartered up and down the River Svy." />
+        <tag Name="Tier" Value="6" />
+        <tag Name="DynamicObjectsTable:TradeGoods" />
+    </object>
+    <object Name="DoQ_PeridotBracelet" Inherits="BaseGemBracelet">
+        <part Name="Render" DisplayName="{{peridot|peridot}} bracelet" ColorString="&amp;G" DetailColor="G" />
+        <part Name="Commerce" Value="420" />
+        <part Name="Description" Short="Bright peridot stones have been expertly cut into a variety of shapes. They've been hung on a chain of cast steel links and bartered up and down the River Svy." />
+        <tag Name="Tier" Value="6" />
+        <tag Name="DynamicObjectsTable:TradeGoods" />
+    </object> -->
+</objects>
