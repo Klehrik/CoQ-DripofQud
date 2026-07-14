@@ -54,7 +54,7 @@
     </population>
     <population Name="Armor 1R">
         <group Name="Items" Style="pickone">
-            <object Weight="5" Number="1" Blueprint="DoQ_Bandana" />
+            <object Weight="2" Number="1" Blueprint="DoQ_Bandana" />
             <object Weight="5" Number="1" Blueprint="DoQ_Balaclava" />
             <object Weight="5" Number="1" Blueprint="DoQ_Jacket" />
         </group>
@@ -76,7 +76,7 @@
         <group Name="Items" Style="pickone">
             <object Weight="5" Number="1" Blueprint="DoQ_PointedHat" />
             <object Weight="10" Number="1" Blueprint="DoQ_TopHat" />
-            <object Weight="5" Number="1" Blueprint="DoQ_Bandana" />
+            <object Weight="20" Number="1" Blueprint="DoQ_Bandana" />
             <object Weight="10" Number="1" Blueprint="DoQ_Balaclava" />
             <object Weight="10" Number="1" Blueprint="DoQ_Jacket" />
             <object Weight="15" Number="1" Blueprint="DoQ_Cuff" />

@@ -42,7 +42,8 @@
         <part Name="Commerce" Value="20" />
         <part Name="Description" Short="Cut cloth is wrapped into a guard about the face and fastened tight at the back." />
         <part Name="Physics" Weight="1" Organic="true" />
-        <tag Name="Tier" Value="2" />
+        <part Name="GasMask" Power="1" />
+        <tag Name="Tier" Value="3" />
     </object>
     <object Name="DoQ_Rangefinder" Inherits="BaseMask">
         <part Name="Armor" AV="0" DV="0" WornOn="Face" />
@@ -60,6 +61,7 @@
         <part Name="DoQ_Rangefinder" ChargeUse="2" Value="2" />
         <tag Name="EquipSound" Value="sfx_equip_armor_artifact_light" />
         <tag Name="Tier" Value="4" />
+        <part Name="ItemElements" Elements="circuitry::4" />
     </object>
     <object Name="DoQ_Balaclava" Inherits="BaseMask">
         <part Name="Armor" AV="0" DV="1" Cold="10" WornOn="Face" />
