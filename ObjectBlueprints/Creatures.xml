@@ -1,0 +1,5 @@
+<objects>
+    <object Name="Crowsong" Load="Merge">
+        <tag Name="NoEquip" Value="DoQ_Bandana" />
+    </object>
+</objects>

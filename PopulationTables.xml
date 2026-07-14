@@ -1,0 +1,180 @@
+<populations>
+    <!-- Spray Dye -->
+    <population Name="ShoemakerInventory">
+        <group Name="Items" Style="pickeach">
+            <object Blueprint="DoQ_ItemDye" Number="0-2" />
+        </group>
+    </population>
+    <population Name="ShoemakerInventory_Legendary">
+        <group Name="Items" Style="pickeach">
+            <object Blueprint="DoQ_ItemDye" Number="1-3" />
+        </group>
+    </population>
+    <population Name="HatterInventory">
+        <group Name="Items" Style="pickeach">
+            <object Blueprint="DoQ_ItemDye" Number="0-2" />
+        </group>
+    </population>
+    <population Name="HatterInventory_Legendary">
+        <group Name="Items" Style="pickeach">
+            <object Blueprint="DoQ_ItemDye" Number="1-3" />
+        </group>
+    </population>
+    <population Name="GloverInventory">
+        <group Name="Items" Style="pickeach">
+            <object Blueprint="DoQ_ItemDye" Number="0-2" />
+        </group>
+    </population>
+    <population Name="GloverInventory_Legendary">
+        <group Name="Items" Style="pickeach">
+            <object Blueprint="DoQ_ItemDye" Number="1-3" />
+        </group>
+    </population>
+    <population Name="HaberdasherInventory">
+        <group Name="Items" Style="pickeach">
+            <object Blueprint="DoQ_ItemDye" Number="0-2" />
+        </group>
+    </population>
+    <population Name="HaberdasherInventory_Legendary">
+        <group Name="Items" Style="pickeach">
+            <object Blueprint="DoQ_ItemDye" Number="1-3" />
+        </group>
+    </population>
+    <population Name="Utility 2">
+        <group Name="Items" Style="pickone">
+            <object Weight="20" Number="1" Blueprint="DoQ_ItemDye" />
+        </group>
+    </population>
+
+    <!-- Equipment -->
+    <population Name="Armor 1C">
+        <group Name="Items" Style="pickone">
+            <object Weight="10" Number="1" Blueprint="DoQ_AmberShawl" />
+        </group>
+    </population>
+    <population Name="Armor 1R">
+        <group Name="Items" Style="pickone">
+            <object Weight="5" Number="1" Blueprint="DoQ_Bandana" />
+            <object Weight="5" Number="1" Blueprint="DoQ_Balaclava" />
+            <object Weight="5" Number="1" Blueprint="DoQ_Jacket" />
+        </group>
+    </population>
+    <population Name="Armor 2C">
+        <group Name="Items" Style="pickone">
+            <object Weight="10" Number="1" Blueprint="DoQ_Poncho" />
+        </group>
+    </population>
+    <population Name="Armor 2R">
+        <group Name="Items" Style="pickone">
+            <object Weight="20" Number="1" Blueprint="DoQ_TopHat" />
+            <object Weight="10" Number="1" Blueprint="DoQ_Bandana" />
+            <object Weight="20" Number="1" Blueprint="DoQ_Balaclava" />
+            <object Weight="20" Number="1" Blueprint="DoQ_Jacket" />
+        </group>
+    </population>
+    <population Name="Armor 3R">
+        <group Name="Items" Style="pickone">
+            <object Weight="5" Number="1" Blueprint="DoQ_PointedHat" />
+            <object Weight="10" Number="1" Blueprint="DoQ_TopHat" />
+            <object Weight="5" Number="1" Blueprint="DoQ_Bandana" />
+            <object Weight="10" Number="1" Blueprint="DoQ_Balaclava" />
+            <object Weight="10" Number="1" Blueprint="DoQ_Jacket" />
+            <object Weight="15" Number="1" Blueprint="DoQ_Cuff" />
+        </group>
+    </population>
+    <population Name="Armor 4R">
+        <group Name="Items" Style="pickone">
+            <object Weight="10" Number="1" Blueprint="DoQ_PowerBoots" />
+        </group>
+    </population>
+    <population Name="Armor 5R">
+        <group Name="Items" Style="pickone">
+            <object Weight="10" Number="1" Blueprint="DoQ_PowerBoots" />
+        </group>
+    </population>
+    <population Name="CrowsongInventory">
+        <group Name="Items" Style="pickeach">
+            <object Blueprint="DoQ_Bandana" />
+        </group>
+    </population>
+    <population Name="FactionEncounterLeaderInventory_Arachnids">
+        <group Name="Items" Style="pickeach">
+            <object Blueprint="DoQ_AmberShawl" Number="0-1" />
+        </group>
+    </population>
+    <population Name="FactionEncounterLeaderInventory_Apes">
+        <group Name="Items" Style="pickeach">
+            <object Blueprint="DoQ_AmberShawl" Number="0-1" />
+        </group>
+    </population>
+    <population Name="ArmorerInventory">
+        <group Name="Items" Style="pickeach">
+            <object Blueprint="DoQ_Cuff" Number="0-1" />
+        </group>
+    </population>
+    <population Name="Lairs_Furnishings_glover">
+        <group Name="Contents" Style="pickeach">
+            <object Blueprint="DoQ_RubberGloves" Number="1" Hint="AlongWall" Chance="50" />
+        </group>
+    </population>
+    <population Name="BarathrumiteTinker">
+        <group Name="Items" Style="pickeach">
+            <object Blueprint="DoQ_RubberGloves" Chance="50" />
+        </group>
+    </population>
+    <population Name="Village Tinker 1">
+        <group Name="Items" Style="pickeach">
+            <object Blueprint="DoQ_RubberGloves" Chance="100" />
+        </group>
+    </population>
+    <population Name="Village Tinker 2">
+        <group Name="Items" Style="pickeach">
+            <object Blueprint="DoQ_RubberGloves" Chance="50" />
+        </group>
+    </population>
+    <population Name="Village Tinker 3">
+        <group Name="Items" Style="pickeach">
+            <object Blueprint="DoQ_RubberGloves" Chance="50" />
+        </group>
+    </population>
+    <population Name="Village Tinker 4">
+        <group Name="Items" Style="pickeach">
+            <object Blueprint="DoQ_RubberGloves" Chance="50" />
+        </group>
+    </population>
+    <population Name="Village Tinker 5">
+        <group Name="Items" Style="pickeach">
+            <object Blueprint="DoQ_RubberGloves" Chance="50" />
+        </group>
+    </population>
+    <population Name="Village Tinker 6">
+        <group Name="Items" Style="pickeach">
+            <object Blueprint="DoQ_RubberGloves" Chance="50" />
+        </group>
+    </population>
+    <population Name="Village Tinker 7">
+        <group Name="Items" Style="pickeach">
+            <object Blueprint="DoQ_RubberGloves" Chance="50" />
+        </group>
+    </population>
+    <population Name="Village Tinker 8">
+        <group Name="Items" Style="pickeach">
+            <object Blueprint="DoQ_RubberGloves" Chance="50" />
+        </group>
+    </population>
+    <population Name="Shoes 1">
+        <group Name="Items" Style="pickone">
+            <object Blueprint="DoQ_HikingBoots" Weight="20" />
+        </group>
+    </population>
+    <population Name="Shoes 2">
+        <group Name="Items" Style="pickone">
+            <object Blueprint="DoQ_HikingBoots" Weight="15" />
+        </group>
+    </population>
+    <population Name="Shoes 3">
+        <group Name="Items" Style="pickone">
+            <object Blueprint="DoQ_HikingBoots" Weight="10" />
+        </group>
+    </population>
+</populations>

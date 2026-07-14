@@ -3,7 +3,7 @@
     <object Name="DoQ_ItemDye" Inherits="Item">
         <part Name="Render" DisplayName="spray {{R-G-B sequence|dye}}" Tile="Klehrik_DripofQud/Spray.png" ColorString="&amp;y" DetailColor="B" RenderString="012" />
         <part Name="Examiner" Complexity="1" Alternate="UnknownBottle" />
-        <part Name="Commerce" Value="15" />
+        <part Name="Commerce" Value="16" />
         <part Name="Description" Short="An aerosol can blown full of various pigments." />
         <part Name="Applicator" />
         <part Name="DoQ_ItemDye" />
@@ -65,7 +65,7 @@
         <part Name="Armor" AV="0" DV="1" Cold="10" WornOn="Face" />
         <part Name="Render" DisplayName="balaclava" Tile="Klehrik_DripofQud/Balaclava.png" ColorString="&amp;K" RenderString="]" />
         <part Name="Commerce" Value="12" />
-        <part Name="Description" Short="Woolen fibers are crocheted into a warm covering for the face." />
+        <part Name="Description" Short="Woolen fibers are crocheted into a warm shell for the face." />
         <part Name="Physics" Weight="1" Organic="true" />
         <tag Name="Tier" Value="2" />
     </object>
@@ -139,23 +139,11 @@
         <tag Name="Tier" Value="5" />
         <stag Name="Movement" />
     </object>
-    <object Name="DoQ_Stilettos" Inherits="BaseBoot">
-        <part Name="Armor" AV="1" DV="-1" WornOn="Feet" />
-        <part Name="Render" DisplayName="stilettos" ColorString="&amp;b" DetailColor="y" Tile="Items/sw_boots_midtier_metal.bmp" RenderString="]" />
-        <part Name="Commerce" Value="20" />
-        <part Name="Description" Short="TODO" />
-        <part Name="Physics" Weight="1" Category="Clothes" />
-        <part Name="MoveCostMultiplier" Amount="10" />
-        <part Name="MeleeWeapon" Skill="ShortBlades" MaxStrengthBonus="2" BaseDamage="1d2+1" Slot="Feet" />
-        <tag Name="ShowMeleeWeaponStats" Value="true" />
-        <tag Name="Tier" Value="2" />
-        <stag Name="Melee" />
-    </object>
     <object Name="DoQ_HikingBoots" Inherits="BaseBoot">
         <part Name="Armor" AV="0" DV="0" WornOn="Feet" />
-        <part Name="Render" DisplayName="hiking boots" ColorString="&amp;b" DetailColor="y" Tile="Items/sw_boots_midtier_metal.bmp" RenderString="]" />
+        <part Name="Render" DisplayName="hiking boots" Tile="Klehrik_DripofQud/HikingBoots.png" ColorString="&amp;w" DetailColor="K" RenderString="]" />
         <part Name="Commerce" Value="14" />
-        <part Name="Description" Short="TODO" />
+        <part Name="Description" Short="Stiff hide lines the walls to support a leather base, and tough rubber undercoats the outsole for superior traction." />
         <part Name="Physics" Weight="3" />
         <part Name="SaveModifier" Vs="Move,Knockdown,Restraint" Amount="2" />
         <tag Name="Tier" Value="2" />
@@ -165,7 +153,6 @@
     <!-- These are lame actually and add nothing -->
     <!-- <object Name="BaseGemBracelet" Inherits="BaseBeadBracelet">
         <part Name="Render" DisplayName="gem bracelet" Tile="Klehrik_DripofQud/Bracelet.png" TileColor="&amp;y" />
-        <!-- <tag Name="EquipSound" Value="sfx_equip_material_generic_glass" /> -->
         <part Name="ItemElements" Elements="jewels::4" />
         <tag Name="AggregateWith" Value="GemBracelet" />
     </object>
@@ -217,5 +204,19 @@
         <part Name="Description" Short="Bright peridot stones have been expertly cut into a variety of shapes. They've been hung on a chain of cast steel links and bartered up and down the River Svy." />
         <tag Name="Tier" Value="6" />
         <tag Name="DynamicObjectsTable:TradeGoods" />
+    </object> -->
+
+    <!-- Too silly I think -->
+    <!-- <object Name="DoQ_Stilettos" Inherits="BaseBoot">
+        <part Name="Armor" AV="1" DV="-1" WornOn="Feet" />
+        <part Name="Render" DisplayName="stilettos" Tile="Items/sw_boots_midtier_metal.bmp" ColorString="&amp;b" DetailColor="y" RenderString="]" />
+        <part Name="Commerce" Value="20" />
+        <part Name="Description" Short="TODO" />
+        <part Name="Physics" Weight="1" Category="Clothes" />
+        <part Name="MoveCostMultiplier" Amount="10" />
+        <part Name="MeleeWeapon" Skill="ShortBlades" MaxStrengthBonus="2" BaseDamage="1d2+1" Slot="Feet" />
+        <tag Name="ShowMeleeWeaponStats" Value="true" />
+        <tag Name="Tier" Value="2" />
+        <stag Name="Melee" />
     </object> -->
 </objects>
