@@ -26,19 +26,9 @@ namespace XRL.World.Parts
         public override bool WantEvent(int ID, int cascade)
         {
             return base.WantEvent(ID, cascade)
-                || ID == EquippedEvent.ID
                 || ID == UnequippedEvent.ID
-                || ID == EarlyBeforeBeginTakeActionEvent.ID
+                || ID == BeforeFireMissileWeaponsEvent.ID
                 || ID == GetShortDescriptionEvent.ID;
-        }
-
-        public override bool HandleEvent(EquippedEvent E)
-        {
-            if (!base.OnWorldMap)
-            {
-                ConsumeChargeIfOperational();
-            }
-            return base.HandleEvent(E);
         }
 
         public override bool HandleEvent(UnequippedEvent E)
@@ -47,23 +37,21 @@ namespace XRL.World.Parts
             return base.HandleEvent(E);
         }
 
-        public override bool HandleEvent(EarlyBeforeBeginTakeActionEvent E)
+        public override bool HandleEvent(BeforeFireMissileWeaponsEvent E)
         {
             GameObject equipped = ParentObject.Equipped;
-            if (equipped != null)
+            if (equipped == E.Actor)
             {
-                if (!base.OnWorldMap && ConsumeChargeIfOperational())
+                if (ConsumeChargeIfOperational())
                 {
                     TryEnable(equipped);
-                    
-                    if (equipped.IsPlayer() && AutoAct.IsInterruptable() && !IsReady(UseCharge: false, IgnoreCharge: false, IgnoreLiquid: false, IgnoreBootSequence: false, IgnoreBreakage: false, IgnoreRust: false, IgnoreEMP: false, IgnoreRealityStabilization: false, IgnoreSubject: false, IgnoreLocallyDefinedFailure: false, 1, null, UseChargeIfUnpowered: false, 0L))
-                    {
-                        AutoAct.Interrupt(equipped.poss(ParentObject) + ParentObject.GetVerb("have") + " stopped working");
-                        TryDisable(equipped);
-                    }
                 }
                 else
                 {
+                    if (Enabled)
+                    {
+                        XRL.Messages.MessageQueue.AddPlayerMessage(equipped.poss(ParentObject) + ParentObject.GetVerb("have") + " stopped working.");
+                    }
                     TryDisable(equipped);
                 }
             }
@@ -82,7 +70,7 @@ namespace XRL.World.Parts
             {
                 Enabled = true;
                 Actor.ModIntProperty("MissileWeaponAccuracyBonus", Value);
-                XRL.Messages.MessageQueue.AddPlayerMessage(Actor.GetIntProperty("MissileWeaponAccuracyBonus").ToString());
+                // XRL.Messages.MessageQueue.AddPlayerMessage(Actor.GetIntProperty("MissileWeaponAccuracyBonus").ToString()); // debug
             }
         }
 
@@ -92,7 +80,7 @@ namespace XRL.World.Parts
             {
                 Enabled = false;
                 Actor.ModIntProperty("MissileWeaponAccuracyBonus", -Value, RemoveIfZero: true);
-                XRL.Messages.MessageQueue.AddPlayerMessage(Actor.GetIntProperty("MissileWeaponAccuracyBonus").ToString());
+                // XRL.Messages.MessageQueue.AddPlayerMessage(Actor.GetIntProperty("MissileWeaponAccuracyBonus").ToString()); // debug
             }
         }
     }

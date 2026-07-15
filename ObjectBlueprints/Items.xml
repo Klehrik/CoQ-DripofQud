@@ -20,6 +20,7 @@
         <part Name="Commerce" Value="95" />
         <part Name="Description" Short="Deep-dyed goatskin is flattened into a disk shape and pushed triangularly skyward to a tapered point." />
         <part Name="Physics" Weight="1" Organic="true" />
+        <tag Name="EquipSound" Value="sfx_equip_armor_leather" />
         <tag Name="Tier" Value="4" />
         <tag Name="DynamicObjectsTable:Headwear" />
 		<stag Name="Scholarly" />
@@ -43,6 +44,7 @@
         <part Name="Description" Short="Cut cloth is wrapped into a guard about the face and fastened tight at the back." />
         <part Name="Physics" Weight="1" Organic="true" />
         <part Name="GasMask" Power="1" />
+        <tag Name="EquipSound" Value="sfx_equip_material_generic_organic" />
         <tag Name="Tier" Value="3" />
     </object>
     <object Name="DoQ_Rangefinder" Inherits="BaseMask">
@@ -52,13 +54,13 @@
         <part Name="Commerce" Value="50" />
         <part Name="Description" Short="The head-mounted apparatus's screen fits snug over the eye, relaying targeting information to its user." />
         <part Name="Physics" Weight="4" />
-        <part Name="PowerSwitch" EnergyCost="100" FlippableWithoutUnderstanding="true" ActivateSuccessMessage="" ActivateFailureMessage="" DeactivateSuccessMessage="" DeactivateFailureMessage="" />
+        <!-- <part Name="PowerSwitch" EnergyCost="100" FlippableWithoutUnderstanding="true" ActivateSuccessMessage="" ActivateFailureMessage="" DeactivateSuccessMessage="" DeactivateFailureMessage="" /> -->
         <part Name="EnergyCellSocket" SlotType="EnergyCell" />
         <part Name="AIDefensiveEnergyCellReload" />
         <part Name="AIPassiveEnergyCellReload" />
         <part Name="Metal" />
         <part Name="TinkerItem" Bits="0124" CanDisassemble="true" CanBuild="true" />
-        <part Name="DoQ_Rangefinder" ChargeUse="2" Value="2" />
+        <part Name="DoQ_Rangefinder" ChargeUse="100" Value="2" />
         <tag Name="EquipSound" Value="sfx_equip_armor_artifact_light" />
         <tag Name="Tier" Value="4" />
         <part Name="ItemElements" Elements="circuitry::4" />
@@ -69,6 +71,7 @@
         <part Name="Commerce" Value="12" />
         <part Name="Description" Short="Woolen fibers are crocheted into a warm shell for the face." />
         <part Name="Physics" Weight="1" Organic="true" />
+        <tag Name="EquipSound" Value="sfx_equip_material_generic_organic" />
         <tag Name="Tier" Value="2" />
     </object>
 
@@ -100,6 +103,7 @@
         <part Name="Description" Short="Synthetic fibers are bound watertight and knit into a lightweight protective covering." />
         <part Name="Physics" Weight="3" Organic="true" Category="Clothes" />
         <part Name="DoQ_LiquidProof" Chance="95" />
+        <tag Name="EquipSound" Value="sfx_equip_armor_synthetic" />
         <tag Name="Tier" Value="2" />
     </object>
 
@@ -110,6 +114,7 @@
         <part Name="Commerce" Value="40" />
         <part Name="Description" Short="A lump of cold metal is wrought into a thick silvery band." />
         <part Name="Physics" Weight="3" />
+        <tag Name="EquipSound" Value="sfx_equip_armor_metal_light" />
         <tag Name="Tier" Value="3" />
         <tag Name="Mods" Value="CommonMods,BracerMods" />
     </object>
@@ -148,6 +153,7 @@
         <part Name="Description" Short="Stiff hide lines the walls to support a leather base, and tough rubber undercoats the outsole for superior traction." />
         <part Name="Physics" Weight="3" />
         <part Name="SaveModifier" Vs="Move,Knockdown,Restraint" Amount="2" />
+        <tag Name="EquipSound" Value="sfx_equip_armor_leather" />
         <tag Name="Tier" Value="2" />
     </object>
 
