@@ -47,7 +47,7 @@
     </object>
     <object Name="DoQ_Rangefinder" Inherits="BaseMask">
         <part Name="Armor" AV="0" DV="0" WornOn="Face" />
-        <part Name="Render" DisplayName="{{c|range}}{{O|finder}}" Tile="Klehrik_DripofQud/Rangefinder.png" ColorString="&amp;c" DetailColor="O" RenderString="]" />
+        <part Name="Render" DisplayName="{{O|range}}finder" Tile="Klehrik_DripofQud/Rangefinder.png" ColorString="&amp;c" DetailColor="O" RenderString="]" />
         <part Name="Examiner" Complexity="4" />
         <part Name="Commerce" Value="50" />
         <part Name="Description" Short="The head-mounted apparatus's screen fits snug over the eye, relaying targeting information to its user." />

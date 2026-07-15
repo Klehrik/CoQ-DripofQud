@@ -2,47 +2,47 @@
     <!-- Spray Dye -->
     <population Name="ShoemakerInventory">
         <group Name="Items" Style="pickeach">
-            <object Blueprint="DoQ_ItemDye" Number="0-2" />
+            <object Blueprint="DoQ_ItemDye" Number="1-2" Chance="50" />
         </group>
     </population>
     <population Name="ShoemakerInventory_Legendary">
         <group Name="Items" Style="pickeach">
-            <object Blueprint="DoQ_ItemDye" Number="1-3" />
+            <object Blueprint="DoQ_ItemDye" Number="1-2" />
         </group>
     </population>
     <population Name="HatterInventory">
         <group Name="Items" Style="pickeach">
-            <object Blueprint="DoQ_ItemDye" Number="0-2" />
+            <object Blueprint="DoQ_ItemDye" Number="1-2" Chance="50" />
         </group>
     </population>
     <population Name="HatterInventory_Legendary">
         <group Name="Items" Style="pickeach">
-            <object Blueprint="DoQ_ItemDye" Number="1-3" />
+            <object Blueprint="DoQ_ItemDye" Number="1-2" />
         </group>
     </population>
     <population Name="GloverInventory">
         <group Name="Items" Style="pickeach">
-            <object Blueprint="DoQ_ItemDye" Number="0-2" />
+            <object Blueprint="DoQ_ItemDye" Number="1-2" Chance="50" />
         </group>
     </population>
     <population Name="GloverInventory_Legendary">
         <group Name="Items" Style="pickeach">
-            <object Blueprint="DoQ_ItemDye" Number="1-3" />
+            <object Blueprint="DoQ_ItemDye" Number="1-2" />
         </group>
     </population>
     <population Name="HaberdasherInventory">
         <group Name="Items" Style="pickeach">
-            <object Blueprint="DoQ_ItemDye" Number="0-2" />
+            <object Blueprint="DoQ_ItemDye" Number="1-2" Chance="50" />
         </group>
     </population>
     <population Name="HaberdasherInventory_Legendary">
         <group Name="Items" Style="pickeach">
-            <object Blueprint="DoQ_ItemDye" Number="1-3" />
+            <object Blueprint="DoQ_ItemDye" Number="1-2" />
         </group>
     </population>
     <population Name="Utility 2">
         <group Name="Items" Style="pickone">
-            <object Weight="20" Number="1" Blueprint="DoQ_ItemDye" />
+            <object Weight="10" Number="1" Blueprint="DoQ_ItemDye" />
         </group>
     </population>
 

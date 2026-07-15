@@ -3,7 +3,6 @@ using HarmonyLib;
 using XRL;
 using XRL.World;
 using XRL.World.Parts;
-using Effects = XRL.World.Effects;
 
 namespace XRL.World.Parts
 {
@@ -26,97 +25,31 @@ namespace XRL.World.Parts
         {
             if (ParentObject.IsWorn())
             {
-                E.Actor.ApplyEffect(new Effects.DoQ_LiquidProof(ParentObject));
+                LiquidRepellent p = E.Actor.GetPart<LiquidRepellent>();
+                if (p == null)
+                {
+                    p = E.Actor.AddPart<LiquidRepellent>();
+                    p.Liquids = "water,cider,goo,oil,ooze,proteangunk,slime,sludge,wine";
+                        // Same batch of liquids as torches
+                }
             }
             return base.HandleEvent(E);
         }
 
         public override bool HandleEvent(UnequippedEvent E)
         {
-            Effect effect = E.Actor.GetEffect((Effects.DoQ_LiquidProof fx) => fx.Source == ParentObject);
-            if (effect != null)
+            LiquidRepellent p = E.Actor.GetPart<LiquidRepellent>();
+            if (p != null)
             {
-                E.Actor.RemoveEffect(effect);
+                E.Actor.RemovePart(p);
             }
             return base.HandleEvent(E);
         }
 
         public override bool HandleEvent(GetShortDescriptionEvent E)
         {
-            E.Postfix.AppendRules("You cannot be covered or stained by liquids.");
+            E.Postfix.AppendRules("You cannot be covered or stained by several common liquids.");
             return base.HandleEvent(E);
-        }
-    }
-}
-
-namespace XRL.World.Effects
-{
-    public class DoQ_LiquidProof : Effect, ITierInitialized
-    {
-        public GameObject Source;
-
-        public DoQ_LiquidProof()
-        {
-            DisplayName = "liquid-proof";
-		    Duration = 9999;
-        }
-
-        public DoQ_LiquidProof(GameObject Source) : this()
-        {
-            this.Source = Source;
-        }
-
-        public override int GetEffectType()
-        {
-            return Effect.TYPE_MINOR | Effect.TYPE_EQUIPMENT;
-        }
-
-        public override bool SameAs(Effect e)
-        {
-            return false;
-        }
-
-        public override bool UseStandardDurationCountdown()
-        {
-            return true;
-        }
-
-        public override string GetDescription()
-        {
-            return "liquid-proof";
-        }
-
-        public override string GetDetails()
-        {
-            return "You cannot be covered or stained by liquids.";
-        }
-
-        public override bool Apply(GameObject Object)
-        {
-            return true;
-        }
-    }
-}
-
-namespace Klehrik_DripofQud
-{
-    [HarmonyPatch(typeof(GameObject))]
-    public class GameObjectPatch
-    {
-        [HarmonyPrefix]
-        [HarmonyPatch(nameof(GameObject.ApplyEffect))]
-        static bool ApplyEffect(GameObject __instance, ref bool __result, Effect E)
-        {
-            Effect effect = __instance.GetEffect<Effects.DoQ_LiquidProof>();
-            if (effect != null
-                && (E is Effects.LiquidCovered
-                 || E is Effects.LiquidStained)
-            )
-            {
-                __result = false;
-                return false;
-            }
-            return true;
         }
     }
 }
