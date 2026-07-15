@@ -99,7 +99,7 @@
         <part Name="Commerce" Value="25" />
         <part Name="Description" Short="Synthetic fibers are bound watertight and knit into a lightweight protective covering." />
         <part Name="Physics" Weight="3" Organic="true" Category="Clothes" />
-        <part Name="DoQ_LiquidProof" />
+        <part Name="DoQ_LiquidProof" Chance="95" />
         <tag Name="Tier" Value="2" />
     </object>
 
