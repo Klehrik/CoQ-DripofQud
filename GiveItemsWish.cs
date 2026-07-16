@@ -23,6 +23,7 @@ namespace Klehrik_DripofQud
             p.ReceiveObject("DoQ_Poncho", 1);
             p.ReceiveObject("DoQ_Cuff", 2);
             p.ReceiveObject("DoQ_RubberGloves", 1);
+            p.ReceiveObject("DoQ_FingerlessGloves", 1);
             p.ReceiveObject("DoQ_PowerBoots", 1);
             p.ReceiveObject("DoQ_HikingBoots", 1);
         }

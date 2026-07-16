@@ -2,6 +2,6 @@
 
 # [Drip of Qud](https://steamcommunity.com/sharedfiles/filedetails/?id=3765386931)
 
-Adds **12** articles of miscellaneous clothing and equipment (most of which can be purchased from various Stilt merchants).
+Adds **13** articles of miscellaneous clothing and equipment (most of which can be purchased from various Stilt merchants).
 
 Also adds **spray dye**, allowing you to recolor items (these can also be purchased at the Stilt).

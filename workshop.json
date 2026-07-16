@@ -1,8 +1,8 @@
 {
   "WorkshopId": 3765386931,
   "Title": "Drip of Qud",
-  "Description": "placeholder desc",
+  "Description": "Adds [b]13[/b] articles of miscellaneous clothing and equipment (most of which can be purchased from various Stilt merchants).\r\n\r\nAlso adds [b]spray dye[/b], allowing you to recolor items (these can also be purchased at the Stilt).\r\n\r\n[url=https://github.com/Klehrik/CoQ-DripofQud]GitHub[/url]",
   "Tags": "Stable,Armor,Item,Tool,Sprite",
-  "Visibility": "0",
+  "Visibility": "2",
   "ImagePath": "preview.png"
 }

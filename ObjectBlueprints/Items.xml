@@ -80,7 +80,7 @@
         <part Name="Armor" AV="0" DV="1" Cold="10" CarryBonus="5" WornOn="Body" />
         <part Name="Render" DisplayName="puffer jacket" Tile="Klehrik_DripofQud/Jacket.png" ColorString="&amp;W" DetailColor="w" RenderString="]" />
         <part Name="Commerce" Value="25" />
-        <part Name="Description" Short="Yellow-stained synthetic material is partitioned into sections encasing soft down, forming a lightweight garb. Small pockets are strewn onto the sides, acting as nests for the hands." />
+        <part Name="Description" Short="Yellow-stained synthetic material is partitioned into sections encasing soft down, forming a lightweight garb. Small pockets are sewn onto the sides, acting as nests for the hands." />
         <part Name="Physics" Weight="2" />
 	    <tag Name="EquipSound" Value="sfx_equip_armor_synthetic" />
         <tag Name="Tier" Value="2" />
@@ -122,13 +122,23 @@
     <!-- Hands -->
     <object Name="DoQ_RubberGloves" Inherits="BaseGlove">
         <part Name="Armor" AV="0" DV="0" Elec="8" WornOn="Hands" />
-        <part Name="Render" DisplayName="{{W|rubber}} gloves" ColorString="&amp;W" DetailColor="c" Tile="Items/sw_gloves_skintight.bmp" RenderString="]" />
+        <part Name="Render" DisplayName="{{W|rubber}} gloves" Tile="Klehrik_DripofQud/RubberGloves.png" ColorString="&amp;W" DetailColor="c" RenderString="]" />
         <part Name="Commerce" Value="8" />
         <part Name="Description" Short="Low-cost rubber implements tailored for electrical work and tinkering." />
         <part Name="Physics" Weight="1" Conductivity="0" />
         <part Name="Springy" Factor="0.9" />
         <tag Name="EquipSound" Value="sfx_equip_armor_synthetic" />
         <tag Name="Tier" Value="2" />
+    </object>
+    <object Name="DoQ_FingerlessGloves" Inherits="BaseGlove">
+        <part Name="Armor" AV="0" DV="1" WornOn="Hands" />
+        <part Name="Render" DisplayName="fingerless gloves" Tile="Klehrik_DripofQud/FingerlessGloves.png" ColorString="&amp;w" DetailColor="y" RenderString="]" />
+        <part Name="Commerce" Value="5" />
+        <part Name="Description" Short="Finger coverings of once-whole gloves are chopped off to make way for naked protrusions of the hand." />
+        <part Name="Physics" Weight="2" Organic="true" />
+        <part Name="Springy" Factor="0.5" />
+        <tag Name="EquipSound" Value="sfx_equip_armor_leather" />
+        <tag Name="Tier" Value="1" />
     </object>
 
     <!-- Feet -->
