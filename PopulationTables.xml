@@ -2,7 +2,7 @@
     <!-- Spray Dye -->
     <population Name="ShoemakerInventory">
         <group Name="Items" Style="pickeach">
-            <object Blueprint="DoQ_ItemDye" Number="1-2" Chance="50" />
+            <object Blueprint="DoQ_ItemDye" Number="1-2" Chance="40" />
         </group>
     </population>
     <population Name="ShoemakerInventory_Legendary">
@@ -12,7 +12,7 @@
     </population>
     <population Name="HatterInventory">
         <group Name="Items" Style="pickeach">
-            <object Blueprint="DoQ_ItemDye" Number="1-2" Chance="50" />
+            <object Blueprint="DoQ_ItemDye" Number="1-2" Chance="40" />
         </group>
     </population>
     <population Name="HatterInventory_Legendary">
@@ -22,7 +22,7 @@
     </population>
     <population Name="GloverInventory">
         <group Name="Items" Style="pickeach">
-            <object Blueprint="DoQ_ItemDye" Number="1-2" Chance="50" />
+            <object Blueprint="DoQ_ItemDye" Number="1-2" Chance="40" />
         </group>
     </population>
     <population Name="GloverInventory_Legendary">
@@ -32,7 +32,7 @@
     </population>
     <population Name="HaberdasherInventory">
         <group Name="Items" Style="pickeach">
-            <object Blueprint="DoQ_ItemDye" Number="1-2" Chance="50" />
+            <object Blueprint="DoQ_ItemDye" Number="1-2" Chance="40" />
         </group>
     </population>
     <population Name="HaberdasherInventory_Legendary">
@@ -66,18 +66,18 @@
     </population>
     <population Name="Armor 2R">
         <group Name="Items" Style="pickone">
-            <object Weight="20" Number="1" Blueprint="DoQ_TopHat" />
+            <object Weight="10" Number="1" Blueprint="DoQ_TopHat" />
             <object Weight="10" Number="1" Blueprint="DoQ_Bandana" />
-            <object Weight="20" Number="1" Blueprint="DoQ_Balaclava" />
-            <object Weight="20" Number="1" Blueprint="DoQ_Jacket" />
+            <object Weight="10" Number="1" Blueprint="DoQ_Balaclava" />
+            <object Weight="15" Number="1" Blueprint="DoQ_Jacket" />
         </group>
     </population>
     <population Name="Armor 3R">
         <group Name="Items" Style="pickone">
             <object Weight="5" Number="1" Blueprint="DoQ_PointedHat" />
-            <object Weight="10" Number="1" Blueprint="DoQ_TopHat" />
+            <object Weight="5" Number="1" Blueprint="DoQ_TopHat" />
             <object Weight="20" Number="1" Blueprint="DoQ_Bandana" />
-            <object Weight="10" Number="1" Blueprint="DoQ_Balaclava" />
+            <object Weight="5" Number="1" Blueprint="DoQ_Balaclava" />
             <object Weight="10" Number="1" Blueprint="DoQ_Jacket" />
             <object Weight="15" Number="1" Blueprint="DoQ_Cuff" />
         </group>
