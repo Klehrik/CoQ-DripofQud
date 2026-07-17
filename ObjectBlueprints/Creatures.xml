@@ -2,4 +2,7 @@
     <object Name="Crowsong" Load="Merge">
         <tag Name="NoEquip" Value="DoQ_Bandana" />
     </object>
+    <object Name="BaseIssachari" Load="Merge">
+        <inventoryobject Blueprint="DoQ_Bandana" Number="1" Chance="2" />
+    </object>
 </objects>

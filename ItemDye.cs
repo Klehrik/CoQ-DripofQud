@@ -54,19 +54,29 @@ namespace XRL.World.Parts
             {
                 return false;
             }
-            string text = Popup.ShowColorPicker("Choose a primary color.", includeNone: false);
+            string text = Popup.ShowColorPicker("Choose a primary color.", AllowEscape: true);
             if (text == null)
             {
                 return false;
             }
-            string text2 = Popup.ShowColorPicker("Choose a secondary color.", includeNone: false);
+            string text2 = Popup.ShowColorPicker("Choose a secondary color.", AllowEscape: true);
             if (text2 == null)
             {
                 return false;
             }
+            if (string.IsNullOrEmpty(text) && string.IsNullOrEmpty(text2))
+            {
+                return false;
+            }
             gameObject.SplitStack(1, E.Actor);
-            gameObject.Render.SetForegroundColor(text);
-            gameObject.Render.DetailColor = text2;
+            if (!string.IsNullOrEmpty(text))
+            {
+                gameObject.Render.SetForegroundColor(text);
+            }
+            if (!string.IsNullOrEmpty(text2))
+            {
+                gameObject.Render.DetailColor = text2;
+            }
             if (E.Actor.IsPlayer())
             {
                 Popup.Show("You dye " + gameObject.t() + ".");
