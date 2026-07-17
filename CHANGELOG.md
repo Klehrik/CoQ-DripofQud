@@ -1,3 +1,7 @@
+## 1.0.4
+- Rangefinder now has a boot sequence (similar to bio-scanning bracelet, etc.)
+- Tiny internal change with LiquidProof effect
+
 ## 1.0.3
 - Spray Dye now has the "none" option to preserve the current color (and does not consume the item if "none" is selected for both)
 - All Issachari now have a 2% chance to carry a Bandana

@@ -48,10 +48,10 @@ namespace XRL.World.Parts
                 }
                 else
                 {
-                    if (Enabled)
-                    {
-                        XRL.Messages.MessageQueue.AddPlayerMessage(equipped.poss(ParentObject) + ParentObject.GetVerb("have") + " stopped working.");
-                    }
+                    // if (Enabled)
+                    // {
+                    //     XRL.Messages.MessageQueue.AddPlayerMessage(equipped.poss(ParentObject) + ParentObject.GetVerb("have") + " stopped working.");
+                    // }
                     TryDisable(equipped);
                 }
             }

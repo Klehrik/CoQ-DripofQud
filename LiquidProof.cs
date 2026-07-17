@@ -34,10 +34,7 @@ namespace XRL.World.Parts
         {
             if (ParentObject.IsWorn())
             {
-                E.Actor.ApplyEffect(new Effects.DoQ_LiquidProof(ParentObject));
-                    // why does this return a bool and not the effect
-                Effects.DoQ_LiquidProof effect = E.Actor.GetEffect((Effects.DoQ_LiquidProof fx) => fx.Source == ParentObject);
-                effect.Chance = Chance;
+                E.Actor.ApplyEffect(new Effects.DoQ_LiquidProof(ParentObject, Chance));
             }
             return base.HandleEvent(E);
         }
@@ -74,9 +71,10 @@ namespace XRL.World.Effects
             Chance = 0;
         }
 
-        public DoQ_LiquidProof(GameObject Source) : this()
+        public DoQ_LiquidProof(GameObject Source, int Chance = 0) : this()
         {
             this.Source = Source;
+            this.Chance = Chance;
         }
 
         public override int GetEffectType()

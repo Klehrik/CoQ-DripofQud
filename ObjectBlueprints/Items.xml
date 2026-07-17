@@ -54,7 +54,7 @@
         <part Name="Commerce" Value="50" />
         <part Name="Description" Short="The head-mounted apparatus's screen fits snug over the eye, relaying targeting information to its user." />
         <part Name="Physics" Weight="4" />
-        <!-- <part Name="PowerSwitch" EnergyCost="100" FlippableWithoutUnderstanding="true" ActivateSuccessMessage="" ActivateFailureMessage="" DeactivateSuccessMessage="" DeactivateFailureMessage="" /> -->
+        <part Name="BootSequence" BootTime="5" ReadoutInName="true" ReadoutInDescription="true" />
         <part Name="EnergyCellSocket" SlotType="EnergyCell" />
         <part Name="AIDefensiveEnergyCellReload" />
         <part Name="AIPassiveEnergyCellReload" />
