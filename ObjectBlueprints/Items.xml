@@ -14,16 +14,15 @@
         <stag Name="Tool" />
     </object>
     <object Name="DoQ_Transmog" Inherits="Item">
-        <part Name="Render" DisplayName="{{c|styling kit}}" Tile="Klehrik_DripofQud/Spray.png" ColorString="&amp;y" DetailColor="B" RenderString="012" />
-        <part Name="Examiner" Complexity="1" Alternate="UnknownBottle" />
-        <part Name="Commerce" Value="48" />
-        <part Name="Description" Short="a" />
-        <part Name="Physics" Category="Applicators" />
-        <part Name="Applicator" />
+        <part Name="Render" DisplayName="{{w|styli}}{{W|n}}{{w|g kit}}" Tile="Klehrik_DripofQud/StylingKit.png" ColorString="&amp;w" DetailColor="W" RenderString="004" />
+        <part Name="Examiner" Complexity="2" Alternate="UnknownTool" />
+        <part Name="Commerce" Value="180" />
+        <part Name="Description" Short="An assortment of stitching, molding, and plying tools sit nestled within a lightweight wood-and-felt box." />
+        <part Name="Physics" Category="Tools" />
         <part Name="DoQ_Transmog" />
-        <tag Name="EquipSound" Value="sfx_equip_material_sprayBottle" />
+        <tag Name="EquipSound" Value="sfx_equip_material_generic_tool" />
         <tag Name="Gift" Value="*noinherit" />
-        <tag Name="Tier" Value="1" />
+        <tag Name="Tier" Value="2" />
         <stag Name="Tool" />
     </object>
 

@@ -16,19 +16,26 @@ namespace XRL.World.Parts
         public override bool WantEvent(int ID, int cascade)
         {
             return base.WantEvent(ID, cascade)
+                || ID == GetInventoryActionsEvent.ID
                 || ID == InventoryActionEvent.ID;
+        }
+
+        public override bool HandleEvent(GetInventoryActionsEvent E)
+        {
+            E.AddAction("Restyle", "restyle", "DoQ_Transmog", null, 'r');
+            return base.HandleEvent(E);
         }
 
         public override bool HandleEvent(InventoryActionEvent E)
         {
-            if (E.Command == "Apply" && AttemptApply(E))
+            if (E.Command == "DoQ_Transmog" && AttemptTransmog(E))
             {
-                E.Actor.UseEnergy(5000, "Item DoQ_Transmog");
+                E.Actor.UseEnergy(10000, "Item DoQ_Transmog");
             }
             return base.HandleEvent(E);
         }
 
-        public bool AttemptApply(InventoryActionEvent E)
+        public bool AttemptTransmog(InventoryActionEvent E)
         {
             if (!E.Actor.CheckFrozen(Telepathic: false, Telekinetic: true)) return false;
             if (E.Actor.AreHostilesNearby())                                return E.Actor.Fail("You can't style with hostiles nearby.");
@@ -70,7 +77,7 @@ namespace XRL.World.Parts
             gameObject.AddPart<DoQ_TransmogMark>();
 
             gameObject2.Destroy();
-            ParentObject.Destroy();
+            // ParentObject.Destroy();
             return true;
         }
     }

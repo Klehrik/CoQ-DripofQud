@@ -13,11 +13,11 @@ namespace Klehrik_DripofQud
         {
             GameObject p = The.Player;
             
-            string[] items = {
+            string[] n20 = {
                 "DoQ_ItemDye",
-                "DoQ_Transmog",
             };
-            string[] clothes = {
+            string[] n1 = {
+                "DoQ_Transmog",
                 "DoQ_PointedHat",
                 "DoQ_TopHat",
                 "DoQ_Bandana",
@@ -33,8 +33,8 @@ namespace Klehrik_DripofQud
                 "DoQ_PowerBoots",
                 "DoQ_HikingBoots",
             };
-            foreach (string i in items) p.ReceiveObject(i, 20);
-            foreach (string c in clothes) p.ReceiveObject(c, 1);
+            foreach (string i in n20) p.ReceiveObject(i, 20);
+            foreach (string i in n1)  p.ReceiveObject(i, 1);
         }
     }
 }
