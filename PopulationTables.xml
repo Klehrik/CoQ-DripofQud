@@ -218,7 +218,7 @@
         </group>
     </population>
 
-    <!-- Rangefinder -->
+    <!-- Tech items -->
     <population Name="Artifact 0R">
         <group Name="Items" Style="pickone">
             <object Blueprint="DoQ_Rangefinder" Weight="1" />
@@ -244,8 +244,8 @@
     </population>
     <population Name="Artifact 4R">
         <group Name="Items" Style="pickone">
-            <object Blueprint="DoQ_Rangefinder" Weight="10" />
-            <object Blueprint="DoQ_PowerBoots" Weight="8" />
+            <object Blueprint="DoQ_Rangefinder" Weight="20" />
+            <object Blueprint="DoQ_PowerBoots" Weight="10" />
         </group>
     </population>
     <population Name="Artifact 5R">
@@ -281,11 +281,13 @@
     <population Name="VillageTier4_QuestReward">
         <group Name="Items" Style="pickone">
             <object Blueprint="DoQ_Rangefinder" />
+            <object Blueprint="DoQ_PowerBoots" />
         </group>
     </population>
     <population Name="VillageTier5_QuestReward">
         <group Name="Items" Style="pickone">
             <object Blueprint="DoQ_Rangefinder" />
+            <object Blueprint="DoQ_PowerBoots" />
         </group>
     </population>
 </populations>
