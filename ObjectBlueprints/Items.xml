@@ -5,8 +5,22 @@
         <part Name="Examiner" Complexity="1" Alternate="UnknownBottle" />
         <part Name="Commerce" Value="16" />
         <part Name="Description" Short="An aerosol can blown full of various pigments." />
+        <part Name="Physics" Category="Applicators" />
         <part Name="Applicator" />
         <part Name="DoQ_ItemDye" />
+        <tag Name="EquipSound" Value="sfx_equip_material_sprayBottle" />
+        <tag Name="Gift" Value="*noinherit" />
+        <tag Name="Tier" Value="1" />
+        <stag Name="Tool" />
+    </object>
+    <object Name="DoQ_Transmog" Inherits="Item">
+        <part Name="Render" DisplayName="{{c|styling kit}}" Tile="Klehrik_DripofQud/Spray.png" ColorString="&amp;y" DetailColor="B" RenderString="012" />
+        <part Name="Examiner" Complexity="1" Alternate="UnknownBottle" />
+        <part Name="Commerce" Value="48" />
+        <part Name="Description" Short="a" />
+        <part Name="Physics" Category="Applicators" />
+        <part Name="Applicator" />
+        <part Name="DoQ_Transmog" />
         <tag Name="EquipSound" Value="sfx_equip_material_sprayBottle" />
         <tag Name="Gift" Value="*noinherit" />
         <tag Name="Tier" Value="1" />
@@ -53,7 +67,7 @@
         <part Name="Examiner" Complexity="4" />
         <part Name="Commerce" Value="50" />
         <part Name="Description" Short="The head-mounted apparatus's screen fits snug over the eye, relaying targeting information to its user." />
-        <part Name="Physics" Weight="4" />
+        <part Name="Physics" Weight="4" Category="Artifacts" />
         <part Name="BootSequence" BootTime="5" ReadoutInName="true" ReadoutInDescription="true" />
         <part Name="EnergyCellSocket" SlotType="EnergyCell" />
         <part Name="AIDefensiveEnergyCellReload" />
@@ -70,9 +84,18 @@
         <part Name="Render" DisplayName="balaclava" Tile="Klehrik_DripofQud/Balaclava.png" ColorString="&amp;K" RenderString="]" />
         <part Name="Commerce" Value="12" />
         <part Name="Description" Short="Woolen fibers are crocheted into a warm shell for the face." />
-        <part Name="Physics" Weight="1" Organic="true" />
+        <part Name="Physics" Weight="1" Organic="true" Category="Clothes" />
         <tag Name="EquipSound" Value="sfx_equip_material_generic_organic" />
         <tag Name="Tier" Value="2" />
+    </object>
+    <object Name="DoQ_Eyepatch" Inherits="BaseMask">
+        <part Name="Armor" AV="0" DV="-1" Ego="1" WornOn="Face" />
+        <part Name="Render" DisplayName="eyepatch" Tile="Klehrik_DripofQud/Eyepatch.png" ColorString="&amp;K" RenderString="]" />
+        <part Name="Commerce" Value="8" />
+        <part Name="Description" Short="Half-obscured vision accompanies a night-black patch strung firmly about the eye." />
+        <part Name="Physics" Weight="1" Organic="true" Category="Clothes" />
+        <tag Name="EquipSound" Value="sfx_equip_material_generic_organic" />
+        <tag Name="Tier" Value="1" />
     </object>
 
     <!-- Body -->
@@ -81,7 +104,7 @@
         <part Name="Render" DisplayName="puffer jacket" Tile="Klehrik_DripofQud/Jacket.png" ColorString="&amp;W" DetailColor="w" RenderString="]" />
         <part Name="Commerce" Value="25" />
         <part Name="Description" Short="Yellow-stained synthetic material is partitioned into sections encasing soft down, forming a lightweight garb. Small pockets are sewn onto the sides, acting as nests for the hands." />
-        <part Name="Physics" Weight="2" />
+        <part Name="Physics" Weight="2" Category="Clothes" />
 	    <tag Name="EquipSound" Value="sfx_equip_armor_synthetic" />
         <tag Name="Tier" Value="2" />
     </object>

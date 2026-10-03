@@ -42,7 +42,7 @@ namespace XRL.World.Parts
 
         public override bool HandleEvent(GetShortDescriptionEvent E)
         {
-            E.Postfix.AppendRules("You can jump " + Jump + " and charge " + Charge + " squares farther.");
+            E.Postfix.AppendRules("You can jump " + (Jump != Charge ? Jump + " " : "") + "and charge " + Charge + " squares farther.");
             return base.HandleEvent(E);
         }
     }

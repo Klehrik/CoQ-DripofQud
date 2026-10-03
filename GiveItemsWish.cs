@@ -12,20 +12,29 @@ namespace Klehrik_DripofQud
         public static void GiveItems()
         {
             GameObject p = The.Player;
-            p.ReceiveObject("DoQ_ItemDye", 20);
-            p.ReceiveObject("DoQ_PointedHat", 1);
-            p.ReceiveObject("DoQ_TopHat", 1);
-            p.ReceiveObject("DoQ_Bandana", 1);
-            p.ReceiveObject("DoQ_Rangefinder", 1);
-            p.ReceiveObject("DoQ_Balaclava", 1);
-            p.ReceiveObject("DoQ_Jacket", 1);
-            p.ReceiveObject("DoQ_AmberShawl", 1);
-            p.ReceiveObject("DoQ_Poncho", 1);
-            p.ReceiveObject("DoQ_Cuff", 2);
-            p.ReceiveObject("DoQ_RubberGloves", 1);
-            p.ReceiveObject("DoQ_FingerlessGloves", 1);
-            p.ReceiveObject("DoQ_PowerBoots", 1);
-            p.ReceiveObject("DoQ_HikingBoots", 1);
+            
+            string[] items = {
+                "DoQ_ItemDye",
+                "DoQ_Transmog",
+            };
+            string[] clothes = {
+                "DoQ_PointedHat",
+                "DoQ_TopHat",
+                "DoQ_Bandana",
+                "DoQ_Rangefinder",
+                "DoQ_Balaclava",
+                "DoQ_Eyepatch",
+                "DoQ_Jacket",
+                "DoQ_AmberShawl",
+                "DoQ_Poncho",
+                "DoQ_Cuff",
+                "DoQ_RubberGloves",
+                "DoQ_FingerlessGloves",
+                "DoQ_PowerBoots",
+                "DoQ_HikingBoots",
+            };
+            foreach (string i in items) p.ReceiveObject(i, 20);
+            foreach (string c in clothes) p.ReceiveObject(c, 1);
         }
     }
 }
