@@ -16,7 +16,7 @@
     <object Name="DoQ_Transmog" Inherits="Item">
         <part Name="Render" DisplayName="{{M|styling}} {{w|kit}}" Tile="Klehrik_DripofQud/StylingKit.png" ColorString="&amp;w" DetailColor="M" RenderString="004" />
         <part Name="Examiner" Complexity="2" Alternate="UnknownTool" />
-        <part Name="Commerce" Value="180" />
+        <part Name="Commerce" Value="200" />
         <part Name="Description" Short="An assortment of stitching, molding, and plying tools sit nestled within a portable wood-and-felt box." />
         <part Name="Physics" Weight="2" Category="Tools" />
         <part Name="DoQ_Transmog" />
@@ -45,6 +45,16 @@
         <part Name="Commerce" Value="20" />
         <part Name="Description" Short="Silken fabric is wound around cylindrically to form a tall pillar with a flattened top." />
         <part Name="Physics" Weight="1" Organic="true" />
+        <tag Name="Tier" Value="2" />
+        <tag Name="DynamicObjectsTable:Headwear" />
+    </object>
+    <object Name="DoQ_Toque" Inherits="BaseHat">
+        <part Name="Armor" AV="0" DV="0" WornOn="Head" />
+        <part Name="Render" DisplayName="toque" Tile="Klehrik_DripofQud/Toque.png" ColorString="&amp;Y" RenderString="]" />
+        <part Name="Commerce" Value="20" />
+        <part Name="Description" Short="TODO" />
+        <part Name="Physics" Weight="1" Organic="true" />
+        <part Name="DoQ_TastyBonus" Value="25" />
         <tag Name="Tier" Value="2" />
         <tag Name="DynamicObjectsTable:Headwear" />
     </object>
@@ -106,6 +116,15 @@
         <part Name="Physics" Weight="2" Category="Clothes" />
 	    <tag Name="EquipSound" Value="sfx_equip_armor_synthetic" />
         <tag Name="Tier" Value="2" />
+    </object>
+    <object Name="DoQ_Plaid" Inherits="BaseArmor">
+        <part Name="Armor" AV="0" DV="1" WornOn="Body" />
+        <part Name="Render" DisplayName="plaid shirt" Tile="Klehrik_DripofQud/Plaid.png" ColorString="&amp;r" DetailColor="K" RenderString="]" />
+        <part Name="Commerce" Value="14" />
+        <part Name="Description" Short="TODO" />
+        <part Name="Physics" Weight="1" Category="Clothes" />
+	    <tag Name="EquipSound" Value="sfx_equip_material_generic_organic" />
+        <tag Name="Tier" Value="1" />
     </object>
 
     <!-- Back -->

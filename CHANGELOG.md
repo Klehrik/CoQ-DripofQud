@@ -1,8 +1,12 @@
 ## 1.1.0
-- Added Styling Kit, allowing you to transmog an item to use another item's texture
+- Added Styling Kit, allowing you to restyle an item to use another item's texture
 - Orange and dark orange now appear as possible dye colors
 - Changed the inventory categories of some items
-- Added Eyepatch
+- Most of the cosmetic-y clothes now spawn less as loot and more from merchants, who have a separate population table addition for them; this is to avoid diluting the loot pool with low-stat equipment
+- Added some more clothes
+    - Eyepatch
+    - Plaid Shirt
+    - Toque (chef hat)
 
 ## 1.0.4
 - Rangefinder now has a boot sequence (similar to bio-scanning bracelet, etc.)

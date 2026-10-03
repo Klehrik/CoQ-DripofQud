@@ -2,5 +2,5 @@
 
 # [Drip of Qud](https://steamcommunity.com/sharedfiles/filedetails/?id=3765386931)
 
-Adds **14** new articles of clothing/equipment, as well as **item recoloring and transmog** (spray dye and styling kits).  
-Most of these can be purchased from various Stilt merchants.  
+Adds **item recoloring and transmog** (spray dye and styling kit), along with **16** new articles of clothing/equipment.  
+Most of these can be purchased from various merchants, and also very rarely spawn as loot.  

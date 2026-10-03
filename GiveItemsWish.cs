@@ -18,18 +18,34 @@ namespace Klehrik_DripofQud
             };
             string[] n1 = {
                 "DoQ_Transmog",
+
+                // Head
                 "DoQ_PointedHat",
                 "DoQ_TopHat",
+                "DoQ_Toque",
+
+                // Face
                 "DoQ_Bandana",
                 "DoQ_Rangefinder",
                 "DoQ_Balaclava",
                 "DoQ_Eyepatch",
+
+                // Body
                 "DoQ_Jacket",
+                "DoQ_Plaid",
+
+                // Back
                 "DoQ_AmberShawl",
                 "DoQ_Poncho",
+
+                // Arm
                 "DoQ_Cuff",
+
+                // Hands
                 "DoQ_RubberGloves",
                 "DoQ_FingerlessGloves",
+
+                // Feet
                 "DoQ_PowerBoots",
                 "DoQ_HikingBoots",
             };
