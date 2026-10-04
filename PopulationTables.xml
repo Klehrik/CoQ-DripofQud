@@ -1,5 +1,11 @@
 <populations>
     <!-- Loot -->
+    <population Name="Utility 3">
+        <group Name="Items" Style="pickone">
+            <object Blueprint="DoQ_ItemDye" Weight="10" />
+            <object Blueprint="DoQ_Transmog" Weight="1" />
+        </group>
+    </population>
     <population Name="Armor 1R">
         <group Name="Items" Style="pickone">
             <group Name="DoQ" Style="pickone" Weight="10">

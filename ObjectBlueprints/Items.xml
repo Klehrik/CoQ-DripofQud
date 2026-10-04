@@ -53,8 +53,8 @@
         <part Name="Render" DisplayName="toque" Tile="Klehrik_DripofQud/Toque.png" ColorString="&amp;Y" RenderString="]" />
         <part Name="Commerce" Value="20" />
         <part Name="Description" Short="A mass of puffy whiteness makes up the brim; its tall stature prominently marks a chef." />
-        <part Name="Physics" Weight="1" Organic="true" />
-        <part Name="DoQ_TastyBonus" Value="25" />
+        <part Name="Physics" Weight="1" Organic="true" Category="Clothes" />
+        <part Name="DoQ_TastyBonus" Value="18" />
         <tag Name="Tier" Value="2" />
         <tag Name="DynamicObjectsTable:Headwear" />
     </object>
@@ -108,7 +108,15 @@
     </object>
 
     <!-- Body -->
-    <object Name="DoQ_Jacket" Inherits="BaseArmor">
+    <object Name="DoQ_Body" Inherits="Armor">
+        <!-- Copy of BaseArmor so that armorers don't stock these -->
+        <part Name="Armor" WornOn="Body" />
+        <tag Name="Mods" Value="BodyMods,CommonMods" />
+        <part Name="Render" Tile="Items/sw_chainmail.bmp" />
+        <part Name="Examiner" Alternate="UnknownArmor" />
+        <tag Name="BaseObject" Value="*noinherit" />
+    </object>
+    <object Name="DoQ_Jacket" Inherits="DoQ_Body">
         <part Name="Armor" AV="0" DV="1" Cold="10" CarryBonus="5" WornOn="Body" />
         <part Name="Render" DisplayName="puffer jacket" Tile="Klehrik_DripofQud/Jacket.png" ColorString="&amp;W" DetailColor="w" RenderString="]" />
         <part Name="Commerce" Value="25" />
@@ -117,7 +125,7 @@
 	    <tag Name="EquipSound" Value="sfx_equip_armor_synthetic" />
         <tag Name="Tier" Value="2" />
     </object>
-    <object Name="DoQ_Plaid" Inherits="BaseArmor">
+    <object Name="DoQ_Plaid" Inherits="DoQ_Body">
         <part Name="Armor" AV="0" DV="1" WornOn="Body" />
         <part Name="Render" DisplayName="plaid shirt" Tile="Klehrik_DripofQud/Plaid.png" ColorString="&amp;r" DetailColor="K" RenderString="]" />
         <part Name="Commerce" Value="14" />
