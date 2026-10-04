@@ -121,7 +121,7 @@
         <part Name="Armor" AV="0" DV="1" WornOn="Body" />
         <part Name="Render" DisplayName="plaid shirt" Tile="Klehrik_DripofQud/Plaid.png" ColorString="&amp;r" DetailColor="K" RenderString="]" />
         <part Name="Commerce" Value="14" />
-        <part Name="Description" Short="Soft flannel is woven with a striking grid-like pattern." />
+        <part Name="Description" Short="Soft flannel is woven into a striking grid-like pattern." />
         <part Name="Physics" Weight="1" Category="Clothes" />
 	    <tag Name="EquipSound" Value="sfx_equip_material_generic_organic" />
         <tag Name="Tier" Value="1" />
