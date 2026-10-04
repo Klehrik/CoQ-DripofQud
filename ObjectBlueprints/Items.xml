@@ -52,7 +52,7 @@
         <part Name="Armor" AV="0" DV="0" WornOn="Head" />
         <part Name="Render" DisplayName="toque" Tile="Klehrik_DripofQud/Toque.png" ColorString="&amp;Y" RenderString="]" />
         <part Name="Commerce" Value="20" />
-        <part Name="Description" Short="TODO" />
+        <part Name="Description" Short="A mass of puffy whiteness makes up the brim; its tall stature prominently marks a chef." />
         <part Name="Physics" Weight="1" Organic="true" />
         <part Name="DoQ_TastyBonus" Value="25" />
         <tag Name="Tier" Value="2" />
@@ -121,7 +121,7 @@
         <part Name="Armor" AV="0" DV="1" WornOn="Body" />
         <part Name="Render" DisplayName="plaid shirt" Tile="Klehrik_DripofQud/Plaid.png" ColorString="&amp;r" DetailColor="K" RenderString="]" />
         <part Name="Commerce" Value="14" />
-        <part Name="Description" Short="TODO" />
+        <part Name="Description" Short="Soft flannel is woven with a striking grid-like pattern." />
         <part Name="Physics" Weight="1" Category="Clothes" />
 	    <tag Name="EquipSound" Value="sfx_equip_material_generic_organic" />
         <tag Name="Tier" Value="1" />

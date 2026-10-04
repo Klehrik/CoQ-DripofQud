@@ -2,37 +2,48 @@
     <!-- Loot -->
     <population Name="Armor 1R">
         <group Name="Items" Style="pickone">
-            <object Blueprint="DoQ_Eyepatch" Weight="5" />
-            <object Blueprint="DoQ_Plaid" Weight="5" />
-            <object Blueprint="DoQ_AmberShawl" Weight="5" />
-            <object Blueprint="DoQ_FingerlessGloves" Weight="5" />
+            <group Name="DoQ" Style="pickone" Weight="10">
+                <object Blueprint="DoQ_Eyepatch" />
+                <object Blueprint="DoQ_Plaid" />
+                <object Blueprint="DoQ_AmberShawl" />
+                <object Blueprint="DoQ_FingerlessGloves" />
+            </group>
         </group>
     </population>
     <population Name="Armor 2R">
         <group Name="Items" Style="pickone">
-            <object Blueprint="DoQ_TopHat" Weight="4" />
-            <object Blueprint="DoQ_Toque" Weight="4" />
-            <object Blueprint="DoQ_Balaclava" Weight="4" />
-            <object Blueprint="DoQ_Jacket" Weight="4" />
-            <object Blueprint="DoQ_Poncho" Weight="4" />
-            <object Blueprint="DoQ_RubberGloves" Weight="4" />
-            <object Blueprint="DoQ_HikingBoots" Weight="4" />
+            <group Name="DoQ" Style="pickone" Weight="20">
+                <object Blueprint="DoQ_TopHat" />
+                <object Blueprint="DoQ_Toque" />
+                <object Blueprint="DoQ_Balaclava" />
+                <object Blueprint="DoQ_Jacket" />
+                <object Blueprint="DoQ_Poncho" />
+                <object Blueprint="DoQ_RubberGloves" />
+                <object Blueprint="DoQ_HikingBoots" />
+            </group>
         </group>
     </population>
     <population Name="Armor 3R">
         <group Name="Items" Style="pickone">
-            <object Blueprint="DoQ_Bandana" Weight="10" />
-            <object Blueprint="DoQ_Cuff" Weight="10" />
+            <group Name="DoQ" Style="pickone" Weight="10">
+                <object Blueprint="DoQ_Bandana" />
+                <object Blueprint="DoQ_Cuff" />
+            </group>
         </group>
     </population>
     <population Name="Armor 4R">
         <group Name="Items" Style="pickone">
-            <object Blueprint="DoQ_PointedHat" Weight="10" />
+            <group Name="DoQ" Style="pickone" Weight="10">
+                <object Blueprint="DoQ_PointedHat" Weight="2" />
+                <object Blueprint="DoQ_PowerBoots" />
+            </group>
         </group>
     </population>
     <population Name="Armor 5R">
         <group Name="Items" Style="pickone">
-            <object Blueprint="DoQ_PowerBoots" Weight="5" />
+            <group Name="DoQ" Style="pickone" Weight="5">
+                <object Blueprint="DoQ_PowerBoots" />
+            </group>
         </group>
     </population>
 
