@@ -2,7 +2,7 @@
 - Added Styling Kit, allowing you to restyle an item to use another item's texture
 - Orange and dark orange now appear as possible dye colors
 - Changed the inventory categories of some items
-- Most of the cosmetic-y clothes now spawn less as loot and more from merchants, who have a separate population table addition for them; this is to reduce loot pool dilution
+- Clothes now spawn less often as loot to reduce loot pool dilution
 - Added more clothes
     - Eyepatch
     - Plaid Shirt
