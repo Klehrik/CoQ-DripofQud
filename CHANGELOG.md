@@ -3,7 +3,7 @@
 - Orange and dark orange now appear as possible dye colors
 - Changed the inventory categories of some items
 - Most of the cosmetic-y clothes now spawn less as loot and more from merchants, who have a separate population table addition for them; this is to reduce loot pool dilution
-- Added some more clothes
+- Added more clothes
     - Eyepatch
     - Plaid Shirt
     - Toque (chef hat)
